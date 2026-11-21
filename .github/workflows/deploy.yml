@@ -15,9 +15,10 @@ jobs:
       - name: Sync files via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.FTP_SERVER }}
+          server: Hngochan.somee.com
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: /www.Hngochan.somee.com/
           exclude: |
             **/.git*
             **/.git*/**
